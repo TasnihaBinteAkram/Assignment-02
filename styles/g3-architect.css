@@ -26,6 +26,12 @@ header {
     font-size: 16px;
     color: var(--light-grey);
 }
+.section-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 24px;
+}
 
 /* ===========Navigation============= */
 .nav {
@@ -102,6 +108,12 @@ header {
     margin: 85px 250px;
 }
 
+.feature-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 72px;
+}
 .feature-images {
     width: 50%;
     display: grid;
@@ -113,33 +125,21 @@ header {
     width: 100%;
 }
 
-.feature-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 72px;
-}
 
 .feature-content {
     width: 50%;
 }
 
 .quick-feature .feature-content h2 {
-    font-size: 45px;
-    font-weight: 700;
     color: var(--black);
     margin-bottom: 24px;
 }
 
 .quick-feature .feature-content span:first-child {
     color: var(--light-grey);
-    font-size: 45px;
-    font-weight: 500;
 }
 
 .quick-feature .feature-content span:last-child {
-    font-size: 45px;
-    font-weight: 700;
     color: var(--orange);
 }
 
@@ -171,22 +171,9 @@ header {
     width: 100%;
 }
 
-.feature-title {
-    font-weight: 700;
-    font-size: 45px;
-    color: #131313;
-    margin-bottom: 24px;
-}
-.more-features-contents .feature-title {
+.more-features-contents .section-title {
     border-left: 5px solid #FF900E;
     padding-left: 20px;
-}
-
-.section-text {
-    font-weight: 400;
-    font-size: 16px;
-    color: #727272;
-    /* margin-bottom: 30px; */
 }
 
 .feature h4 {
@@ -287,9 +274,7 @@ header {
     width: 50%;
     margin: 0 auto;
 }
-.sponsors-text .feature-title{
-    border-left: none;
-}
+
 .sponsors{
     display: flex;
     justify-content: center;
@@ -303,6 +288,7 @@ header {
     -moz-filter: grayscale(100%);
 }
 
+/* ==========contact us============ */
 .contact-us{
     margin: 0 200px;
     text-align: center;
