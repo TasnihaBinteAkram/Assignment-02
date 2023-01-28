@@ -77,6 +77,12 @@ header {
     border-radius: 5px;
     font-weight: 600;
     font-size: 20px;
+    transition: all 0.2s linear;
+}
+
+.btn-primary:hover{
+    background-color: #5b442a;
+    scale: 1.01;
 }
 
 .banner-content {
@@ -141,53 +147,192 @@ header {
     margin-bottom: 24px;
 }
 
-.more-features {
+/* .more-features {
     margin: 100px 200px;
-}
+} */
 
 
 
 /* ==========More features css =========*/
 
 .more-features {
+    margin: 120px 200px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    gap: 80px;
-    margin-bottom: 50px;
+    gap: 100px;
 }
 
-.more-features-contents, .more-features-image {
+.more-features-contents,
+.more-features-image {
     width: 50%;
-}
-
-.feature-title {
-    width: 80%;
-    border-left: 5px solid #FF900E;
-    font-weight: 700;
-    font-size: 45px;
-    color: var(--black);
-    padding-left: 20px;
-    margin-bottom: 24px;
 }
 
 .more-features-image img {
     width: 100%;
 }
 
-.feature {
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+.feature-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+.more-features-contents .feature-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.section-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    /* margin-bottom: 30px; */
 }
 
 .feature h4 {
     font-weight: 600;
     font-size: 20px;
-    color: var(--black);
-    margin: 10px 0px;
+    color: #131313;
+    margin-bottom: 10px;
 }
-.more-features-contents > p{
-    margin-bottom: 20px;
+
+.feature {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.more-features-image {
+    position: relative;
+}
+
+.experience {
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    position: absolute;
+    left: -10%;
+    top: 90%;
+    text-align: center;
+}
+
+.experience h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.experience p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* ==========Some Facts========== */
+.some-facts {
+    margin: 0 200px;
+}
+
+.facts-content {
+    width: 50%;
+}
+
+.achievements {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.achievement {
+    text-align: center;
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+    padding: 30px 10px;
+    transition: all 0.3s linear;
+}
+.achievement:hover{
+    background-color: #FF900E;
+    scale: 1.1;
+
+}
+.achievement:hover.achievement p{
+    color: white;
+}
+.achievement:hover.achievement h2{
+    color: white;
+}
+
+.achievement h2 {
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600px;
+}
+
+.achievement p {
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+
+/* ============Sponsors============= */ 
+
+.our-sponsors{
+    margin: 150px 200px;
+}
+.sponsors-text{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.sponsors-text .feature-title{
+    border-left: none;
+}
+.sponsors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+.sponsors img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.contact-us{
+    margin: 0 200px;
+    text-align: center;
+}
+form{
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 10px;
+}
+form input, form textarea{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #af5f03;
+}
+.container{
+    box-shadow: 0 0 15px rgb(229, 229, 229,0.5);
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* ==============footer============ */
+footer{
+    margin: 100px 200px;
+    text-align: center;
+    background-color: var(--pink);
+    padding: 30px;
+    border-radius: 5px;
 }
