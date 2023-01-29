@@ -314,6 +314,23 @@ form input, form textarea{
     margin: 0 auto;
 }
 
+.submit-btn{
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #FF900E;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+
+.submit-btn:hover{
+    background: #5b442a;
+}
+
 /* ==============footer============ */
 footer{
     margin: 100px 200px;
